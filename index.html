@@ -306,6 +306,24 @@ footer a{color:var(--mut)}
   .rv .w i{transform:none!important}
   .scale-fill{transform:scaleX(.2925)!important}
 }
+
+/* ── мерч-бокс ── */
+.merch{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2.2vw,34px);align-items:end;margin-top:clamp(24px,3vw,44px)}
+.mi{position:relative;text-align:center}
+.mi img{width:100%;height:auto;display:block;
+  filter:drop-shadow(0 22px 46px rgba(0,0,0,.7)) saturate(1.06)}
+.mi figcaption{font-family:var(--mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--mut);margin-top:12px}
+.mi--hero{grid-column:span 2;grid-row:span 2}
+.mi--hero figcaption{font-size:12px;color:var(--green)}
+.merch-note{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(28px,3.4vw,44px)}
+.merch-note span{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:11px 18px;background:var(--panel)}
+@media(max-width:860px){
+  #merch .stick{display:none}
+  .merch{grid-template-columns:repeat(2,1fr);gap:18px}
+  .mi--hero{grid-column:span 2;grid-row:auto}
+}
 </style>
 </head>
 <body>
@@ -313,13 +331,13 @@ footer a{color:var(--mut)}
 
 <nav>
   <div class="brand">METEORA <em>PRO</em><small>ПУБЛИЧНЫЙ ЧЕЛЛЕНДЖ</small></div>
-  <div class="navlinks">
+  <div class="navlinks" style="margin-left:auto">
     <a href="#challenge">ЧЕЛЛЕНДЖ</a>
     <a href="#pro">METEORA PRO</a>
     <a href="#youtube">YOUTUBE</a>
     <a href="#intensive">СТРИМ</a>
+    <a href="#merch">МЕРЧ</a>
   </div>
-  <a class="btn" style="margin-left:auto" href="https://t.me/meteoracryptus" target="_blank" rel="noopener">ВСТУПИТЬ В ЧЕЛЛЕНДЖ →</a>
 </nav>
 
 <!-- ═══════════ HERO ═══════════ -->
@@ -715,6 +733,31 @@ footer a{color:var(--mut)}
       </div>
     </div>
     <p class="pricenote" data-rise>ОКНО ДОСТУПА — 24 ЧАСА ПОСЛЕ ЗАКРЫТОГО ЭФИРА · <b>ДАЛЬШЕ ЦЕНА ВЫШЕ НА $100</b></p>
+  </div>
+</section>
+
+<!-- ═══════════ МЕРЧ-БОКС ═══════════ -->
+<section id="merch">
+  <div class="stick" data-para="-45" style="width:clamp(110px,11vw,180px);right:1%;top:7%"><img src="assets/merch/pepe.png" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <div class="sh">
+      <p class="k" data-rise>06 · БОНУС УЧАСТНИКАМ</p>
+      <h2 class="rv">Мерч-бокс за <span class="accent">Union PRO</span></h2>
+      <p class="lead" data-rise>Всем, кто заходит в PRO, отправляем коробку: фирменный набор CRYPTUS
+        и холодный кошелёк <b>Tangem</b> — чтобы то, что заработал, лежало не на бирже.</p>
+    </div>
+
+    <div class="merch">
+      <figure class="mi mi--hero" data-rise><img src="assets/merch/tee_btc.png" alt="Футболка BITCOIN" loading="lazy"><figcaption>Футболка BITCOIN</figcaption></figure>
+      <figure class="mi" data-rise><img src="assets/merch/tangem.png" alt="Кошелёк Tangem" loading="lazy"><figcaption>Кошелёк Tangem</figcaption></figure>
+      <figure class="mi" data-rise><img src="assets/merch/notebook.png" alt="Блокнот CRYPTUS" loading="lazy"><figcaption>Блокнот + ручка</figcaption></figure>
+      <figure class="mi" data-rise><img src="assets/merch/stickers.png" alt="Стикер-паки" loading="lazy"><figcaption>Стикер-паки</figcaption></figure>
+      <figure class="mi" data-rise><img src="assets/merch/socks.png" alt="Носки" loading="lazy"><figcaption>Носки</figcaption></figure>
+    </div>
+
+    <div class="merch-note" data-rise>
+      <span>Футболки CRYPTUS</span><span>Брелок Pepe</span><span>Холодное хранение</span><span>Доставка по РФ</span>
+    </div>
   </div>
 </section>
 
