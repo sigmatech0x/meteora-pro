@@ -98,6 +98,7 @@ nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:50;
 .stick img{width:100%;height:auto;display:block;mix-blend-mode:screen}
 .stick--coin{width:clamp(300px,36vw,560px);right:-4%;top:14%}
 .stick--meteor{width:clamp(150px,15vw,240px);left:-4%;top:-4%;opacity:.7}
+@media(max-width:1200px){section .stick{display:none}}
 @media(max-width:860px){.stick--coin{width:56vw;right:-14%;top:-3%;opacity:.26}.stick--meteor{display:none}section .stick{display:none}}
 
 /* терминальная строка метрик */
@@ -173,8 +174,8 @@ nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:50;
 .tg-shot{border:1px dashed rgba(20,241,149,.3);border-radius:12px;min-height:190px;display:grid;place-items:center;
   text-align:center;padding:18px;background:rgba(20,241,149,.03)}
 .tg-shot .k{color:var(--mut)}
-.tg-img{width:100%;height:230px;object-fit:cover;object-position:top;border-radius:12px;display:block;
-  border:1px solid rgba(255,255,255,.08)}
+.tg-img{width:100%;height:auto;max-height:360px;object-fit:contain;background:#05080b;border-radius:12px;display:block;border:1px solid rgba(255,255,255,.08);cursor:zoom-in;transition:border-color .2s}
+.tg-img:hover{border-color:rgba(20,241,149,.45)}
 .tg-quote{font-size:14.5px;line-height:1.6;color:var(--ink);border-left:3px solid var(--green);
   padding:6px 0 6px 14px;min-height:190px;display:flex;align-items:center}
 .tg-cap{font-size:14px;color:var(--mut);margin-top:12px;line-height:1.5}
@@ -532,56 +533,56 @@ footer a{color:var(--mut)}
       <article class="tg" data-rise>
         <div class="tg-head"><div class="tg-ava" style="background:radial-gradient(circle at 30% 25%,#c9a2ff,#4b1d99)"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5" stroke="#1b0836" stroke-width="2" stroke-linejoin="round"/></svg></div>
         <div class="tg-name"><span class="blur">@participant_01</span><small>+$313 · +14,09%</small></div></div>
-        <div class="tg-body"><img class="tg-img" src="assets/tg/pro_5490.jpg" alt="Скрин участника Meteora PRO" loading="lazy">
+        <div class="tg-body"><a href="assets/tg/pro_5490.jpg" target="_blank" rel="noopener" title="Открыть скрин целиком"><img class="tg-img" src="assets/tg/pro_5490.jpg" alt="Скрин участника Meteora PRO" loading="lazy"></a>
         <p class="tg-cap"><b style="color:var(--green)">+$313</b> за 15 минут в пуле CLAWD-SOL.</p></div>
       </article>
       <article class="tg" data-rise>
         <div class="tg-head"><div class="tg-ava" style="background:radial-gradient(circle at 30% 25%,#c9a2ff,#4b1d99)"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5" stroke="#1b0836" stroke-width="2" stroke-linejoin="round"/></svg></div>
-        <div class="tg-name"><span class="blur">@participant_02</span><small>+16,56% ЗА 4 МИНУТЫ</small></div></div>
-        <div class="tg-body"><img class="tg-img" src="assets/tg/pro_6043.jpg" alt="Скрин участника Meteora PRO" loading="lazy">
-        <p class="tg-cap">MOONDENG-SOL: <b style="color:var(--green)">+16,56%</b> — вход и выход за четыре минуты.</p></div>
+        <div class="tg-name"><span class="blur">@participant_02</span><small>TOAD-SOL · ПРОФИТ $10 426</small></div></div>
+        <div class="tg-body"><a href="assets/tg/pro_6040.jpg" target="_blank" rel="noopener" title="Открыть скрин целиком"><img class="tg-img" src="assets/tg/pro_6040.jpg" alt="Скрин участника Meteora PRO" loading="lazy"></a>
+        <p class="tg-cap">TOAD-SOL: профит <b style="color:var(--green)">$10 426</b> — карточка закрытой позиции.</p></div>
       </article>
       <article class="tg" data-rise>
         <div class="tg-head"><div class="tg-ava" style="background:radial-gradient(circle at 30% 25%,#c9a2ff,#4b1d99)"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5" stroke="#1b0836" stroke-width="2" stroke-linejoin="round"/></svg></div>
         <div class="tg-name"><span class="blur">@participant_03</span><small>+29,67% И +52,74%</small></div></div>
-        <div class="tg-body"><img class="tg-img" src="assets/tg/pro_5584.jpg" alt="Скрин участника Meteora PRO" loading="lazy">
+        <div class="tg-body"><a href="assets/tg/pro_5584.jpg" target="_blank" rel="noopener" title="Открыть скрин целиком"><img class="tg-img" src="assets/tg/pro_5584.jpg" alt="Скрин участника Meteora PRO" loading="lazy"></a>
         <p class="tg-cap">Две позиции подряд: <b style="color:var(--green)">+29,67%</b> и <b style="color:var(--green)">+52,74%</b>.</p></div>
       </article>
       <article class="tg" data-rise>
         <div class="tg-head"><div class="tg-ava" style="background:radial-gradient(circle at 30% 25%,#c9a2ff,#4b1d99)"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5" stroke="#1b0836" stroke-width="2" stroke-linejoin="round"/></svg></div>
         <div class="tg-name"><span class="blur">@participant_04</span><small>ПЕРЕЗАШЁЛ — И СДЕЛАЛ X2</small></div></div>
-        <div class="tg-body"><img class="tg-img" src="assets/tg/pro_6103.jpg" alt="Скрин участника Meteora PRO" loading="lazy">
+        <div class="tg-body"><a href="assets/tg/pro_6103.jpg" target="_blank" rel="noopener" title="Открыть скрин целиком"><img class="tg-img" src="assets/tg/pro_6103.jpg" alt="Скрин участника Meteora PRO" loading="lazy"></a>
         <p class="tg-cap">«Он-то отскочил, но я спал. А спал сладко, потому что перезашёл и сделал x2.»</p></div>
       </article>
       <article class="tg" data-rise>
         <div class="tg-head"><div class="tg-ava" style="background:radial-gradient(circle at 30% 25%,#c9a2ff,#4b1d99)"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5" stroke="#1b0836" stroke-width="2" stroke-linejoin="round"/></svg></div>
         <div class="tg-name"><span class="blur">@participant_05</span><small>PNL ЛЕСТНИЦЕЙ</small></div></div>
-        <div class="tg-body"><img class="tg-img" src="assets/tg/pro_5898.jpg" alt="Скрин участника Meteora PRO" loading="lazy">
+        <div class="tg-body"><a href="assets/tg/pro_6071.jpg" target="_blank" rel="noopener" title="Открыть скрин целиком"><img class="tg-img" src="assets/tg/pro_6071.jpg" alt="Скрин участника Meteora PRO" loading="lazy"></a>
         <p class="tg-cap">Live-PNL растёт лестницей — так выглядит день по стратегии.</p></div>
       </article>
       <article class="tg" data-rise>
         <div class="tg-head"><div class="tg-ava" style="background:radial-gradient(circle at 30% 25%,#c9a2ff,#4b1d99)"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5" stroke="#1b0836" stroke-width="2" stroke-linejoin="round"/></svg></div>
         <div class="tg-name"><span class="blur">@participant_06</span><small>+$295 · STONK-SOL</small></div></div>
-        <div class="tg-body"><img class="tg-img" src="assets/tg/pro_5489.jpg" alt="Скрин участника Meteora PRO" loading="lazy">
+        <div class="tg-body"><a href="assets/tg/pro_5489.jpg" target="_blank" rel="noopener" title="Открыть скрин целиком"><img class="tg-img" src="assets/tg/pro_5489.jpg" alt="Скрин участника Meteora PRO" loading="lazy"></a>
         <p class="tg-cap"><b style="color:var(--green)">+$295</b> за 14 минут — объёмом, без плеча.</p></div>
       </article>
       <article class="tg" data-rise>
         <div class="tg-head"><div class="tg-ava" style="background:radial-gradient(circle at 30% 25%,#c9a2ff,#4b1d99)"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5" stroke="#1b0836" stroke-width="2" stroke-linejoin="round"/></svg></div>
         <div class="tg-name"><span class="blur">@participant_07</span><small>ФУЛ ОТРАБОТКА GTA</small></div></div>
-        <div class="tg-body"><img class="tg-img" src="assets/tg/pro_6104.jpg" alt="Скрин участника Meteora PRO" loading="lazy">
+        <div class="tg-body"><a href="assets/tg/pro_6104.jpg" target="_blank" rel="noopener" title="Открыть скрин целиком"><img class="tg-img" src="assets/tg/pro_6104.jpg" alt="Скрин участника Meteora PRO" loading="lazy"></a>
         <p class="tg-cap">«Фул отработка ГТА» — вся сетка позиций в зелёном.</p></div>
       </article>
       <article class="tg" data-rise>
         <div class="tg-head"><div class="tg-ava" style="background:radial-gradient(circle at 30% 25%,#c9a2ff,#4b1d99)"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5" stroke="#1b0836" stroke-width="2" stroke-linejoin="round"/></svg></div>
-        <div class="tg-name"><span class="blur">@participant_08</span><small>+18,38% НА ПУЛЕ</small></div></div>
-        <div class="tg-body"><img class="tg-img" src="assets/tg/pro_5869.jpg" alt="Скрин участника Meteora PRO" loading="lazy">
-        <p class="tg-cap">Пул к USDT: <b style="color:var(--green)">+18,38%</b> при спокойном рынке.</p></div>
+        <div class="tg-name"><span class="blur">@participant_08</span><small>+$18 · RISK-SOL</small></div></div>
+        <div class="tg-body"><a href="assets/tg/pro_5869.jpg" target="_blank" rel="noopener" title="Открыть скрин целиком"><img class="tg-img" src="assets/tg/pro_5869.jpg" alt="Скрин участника Meteora PRO" loading="lazy"></a>
+        <p class="tg-cap">RISK-SOL: профит <b style="color:var(--green)">$18</b> за пять минут в пуле.</p></div>
       </article>
       <article class="tg" data-rise>
         <div class="tg-head"><div class="tg-ava" style="background:radial-gradient(circle at 30% 25%,#c9a2ff,#4b1d99)"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5" stroke="#1b0836" stroke-width="2" stroke-linejoin="round"/></svg></div>
-        <div class="tg-name"><span class="blur">@participant_09</span><small>+101 SOL</small></div></div>
-        <div class="tg-body"><img class="tg-img" src="assets/tg/pro_5746.jpg" alt="Скрин участника Meteora PRO" loading="lazy">
-        <p class="tg-cap">«Круто популил на <b style="color:var(--green)">+101 SOL</b>» — сделка недели в чате.</p></div>
+        <div class="tg-name"><span class="blur">@participant_09</span><small>СДЕЛКА НЕДЕЛИ</small></div></div>
+        <div class="tg-body"><a href="assets/tg/ch_63.jpg" target="_blank" rel="noopener" title="Открыть скрин целиком"><img class="tg-img" src="assets/tg/ch_63.jpg" alt="Скрин участника Meteora PRO" loading="lazy"></a>
+        <p class="tg-cap">«Лягушка норм принтит» — <b style="color:var(--green)">STONK-SOL $4 329</b>, разбор сделки прямо в чате.</p></div>
       </article>
     </div>
 
